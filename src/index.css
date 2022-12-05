@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face{
+  font-family: "Nitti";
+  font-weight:400;
+  src:local("Nitti"),
+  url("./fonts/nitti/Nitti-Normal.woff")
+}
+
+@font-face{
+  font-family: "Nitti";
+  font-weight:700;
+  src:local("Nitti Bold"),
+  url("./fonts/nitti/Nitti-Bold.woff")
+}
+
+@font-face{
+  font-family: "GTWalsheimPro";
+  font-weight:lighter;
+  src:local("GTWalsheimPro Light"),
+  url("./fonts/GTWalsheimPro/GTWalsheimPro-Light.woff")
+}
+@font-face{
+  font-family: "GTWalsheimPro";
+  src:local("GTWalsheimPro Medium"),
+  url("./fonts/GTWalsheimPro/GTWalsheimPro-Medium.woff")
+}
+
