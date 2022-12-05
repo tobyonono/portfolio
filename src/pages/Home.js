@@ -1,7 +1,7 @@
-import { ImageArray } from "../components/ImageArray";
+import { ImageArray } from "../images/ImageArray";
 import Navbar from "../components/Navbar";
 import OverlappingImages from "../components/OverlappingImages";
-import ProjectSection from "../components/ProjectSection";
+import ProjectSection from "../components/Project/ProjectSection";
 
 const Home = () => (
     <div>

@@ -1,5 +1,5 @@
 import SingleOverlappingImage from './SingleOverlappingImage';
-import { ImageArray } from './ImageArray';
+import { ImageArray } from '../images/ImageArray';
 import { useState } from 'react';
 
 

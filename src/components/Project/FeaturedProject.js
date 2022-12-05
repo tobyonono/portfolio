@@ -1,5 +1,5 @@
 import ProjectSection from "./ProjectSection"
-import { ImageArray } from './ImageArray';
+import { ImageArray } from '../../images/ImageArray';
 import { ProjectInfo } from "./ProjectInfo";
 import SingleProject from "./SingleProject";
 
