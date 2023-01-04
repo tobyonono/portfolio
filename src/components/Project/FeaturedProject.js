@@ -10,8 +10,8 @@ const FeaturedProject = () => {
     })
 
     return (
-        <div className="p-20">
-            <ul className="w-3/4">
+        <div className="max-w-screen-lg m-auto">
+            <ul className="grid grid-cols-2 gap-4">
                 {ProjectList}
             </ul>
         </div>

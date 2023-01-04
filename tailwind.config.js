@@ -9,6 +9,7 @@ module.exports = {
       opacity: ['responsive', 'hover', 'focus', 'group-hover'],
       fontFamily: {
         'nitti': ['Nitti', 'mono'],
+        'guyot': ['Guyot', 'sans'],
         'lora':['"Space Grotesk"', 'sans'],
         'GTWalsheim':['GTWalsheimPro', 'sans']
       },

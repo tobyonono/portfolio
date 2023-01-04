@@ -31,6 +31,20 @@ code {
 }
 
 @font-face{
+  font-family: "Guyot";
+  font-weight:400;
+  src:local("Guyot"),
+  url("./fonts/Guyot/GuyotText-Regular.otf")
+}
+
+@font-face{
+  font-family: "Guyot";
+  font-style: italic;
+  src:local("Guyot"),
+  url("./fonts/Guyot/GuyotText-RegularItalic.otf")
+}
+
+@font-face{
   font-family: "GTWalsheimPro";
   font-weight:lighter;
   src:local("GTWalsheimPro Light"),

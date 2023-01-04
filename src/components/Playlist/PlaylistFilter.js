@@ -7,10 +7,10 @@ const PlaylistFilter = ({setFilteredGenre}) => {
         setFilteredGenre(filter)
     }
 
-    const filterList = uniqueTags.map((tag, i) => <li className="ml-3 text-gray-400 after:content-['/'] after:ml-3 uppercase" key={i} onClick={() => handleClick(tag)}>{tag}</li>)
+    const filterList = uniqueTags.map((tag, i) => <li className="ml-3 text-gray-400 after:content-['/'] after:ml-3 " key={i} onClick={() => handleClick(tag)}>{tag}</li>)
 
     return (
-        <ul className="flex font-GTWalsheim p-20 d">Filter:{filterList}</ul>
+        <ul className="flex font-GTWalsheim max-w-screen-lg m-auto items-center justify-start py-8 text-sm">Filter:{filterList}</ul>
     )
 
 }

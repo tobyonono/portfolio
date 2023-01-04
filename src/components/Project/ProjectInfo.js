@@ -3,7 +3,7 @@ import { ProjectImages } from "../../images/ProjectImages"
 export const ProjectInfo = [
     {
         name: 'SPOTIFY RADIO',
-        description: "A simultaneous listening web app using the Spotify API. Depending on what channel you select it will match your playing state to whatever is broadcasting on that channel. Additional features like blackout poetry on lyrics, playback history etc.",
+        description: "A simultaneous listening web app using the Spotify API. Matches your playing state to whatever is broadcasting on that channel.",
         devTools: {
             library: 'React',
             styling: 'Tailwind CSS',

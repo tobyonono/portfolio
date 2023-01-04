@@ -1,47 +1,88 @@
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { ImageArray } from "../images/ImageArray";
 import Navbar from "../components/Navbar";
+import Navbar2 from "../components/Navbar2";
 import OverlappingImages from "../components/OverlappingImages";
 import ProjectSection from "../components/Project/ProjectSection";
 
-const Home = () => (
-    <div>
-        <section className='h-screen imageContainer'>
-            <Navbar />
-            <OverlappingImages />
-        </section>
-        <ProjectSection />
-        <section className="h-full bg-white p-20">
-            <div className="flex first-line:">
-                <span className="text-black font-nitti text-6xl px-20">ABOUT ME - </span>
+const items = ["I value kindness & open communication.", "I studied CS @ Trinity College Dublin.","I love downloading new fonts I'm never going to use.", "I support Liverpool FC.", "I have great taste in music.", "Click on 'audio' if you don't believe me.", "Could genuinely eat 20+ crepes in a sitting.", "I like watching food related videos.", "Don't necessarily like cooking."];
 
-            </div>
-            <div className="grid grid-cols-2 p-20">
-                <div>
-                    <div className="font-GTWalsheim text-lg text-left ">
-                        <p className="mb-4">Hello! My name is Toby and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
-                        <p className="mb-4">Fast-forward to today, and I’ve had the privilege of working for a radio station, consulting on FX analytics projects, and working on political campaigns.</p>
-                        <p className="mb-4">What excites me most about working in software development is being able to design and create things that have purpose and solve real problems. Leaning into customer research and insight, finding the right problems to solve, delivering that value as quickly as possible, learning from it and then iterating and improving that value over time is the key to great design.</p>
-                        <p>Here are a few technologies I’ve been working with recently:</p>
-                    </div>
+const Home = () => {
+    const [animatedLine, setAnimatedLine] = useState(items[0]);
+    const [index, setIndex] = useState(0);
+    const [anim, setAnim] = useState("in");
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((i) => (i + 1) % items.length);
+            setAnim("in");
+            setTimeout(() => {
+                setAnim("out");
+            }, 1000);
+        }, 2000);
+        return () => clearInterval(interval);
+    }, []);
+
+    useEffect(() => {
+        setAnimatedLine(items[index]);
+    }, [index]);
+
+    const variants = {
+        out: {
+            opacity: 0
+        },
+        in: {
+            opacity: 1,
+            transition: {
+                duration: 1.5
+            }
+        }
+    };
+    return (
+        <div>
+            <header className="border-b-2">
+                <Navbar2 />
+            </header>
+            <section className="grid grid-cols-2 max-w-screen-lg m-auto">
+                <div className="py-12 pr-12 border-r-2 text-left align-middle">
+                    <h5 className="font-GTWalsheim text-5xl mb-2"><span className="font-guyot italic">Hello!</span> I'm Toby,</h5>
+                    <motion.div
+                        animate={anim}
+                        variants={variants}
+                        className="font-GTWalsheim text-gray-600"
+                        style={{ fontSize: 40 }}
+                    >
+                        {animatedLine}
+                    </motion.div>
+                </div>
+                <div className="py-12 pl-12 text-left font-GTWalsheim text-sm">
+                    <p className="mb-4">I enjoy creating things that live on the internet. My interest in things computer related started back in 2000 trying to beat all the records on Mavis Beacon.</p>
+                    <p className="mb-4">I still don't type particularly fast.</p>
+                    <p className="mb-4">Then came hooking up multiple screens, remote access with LogMeIn, editing HTML on mySpace & Tumblr and launching ridiculous websites using Freewebs.</p>
+                    <p className="mb-4">Fast-forward to today, and I’ve had the privilege of working for a radio station, consulting on FX analytics projects, and working on political campaigns.</p>
+                    <p>Here are a few technologies I’ve been working with recently:</p>
                     <ul className="m-4 grid grid-cols-[repeat(2,_minmax(140px,_200px))] text-left list-[circle]">
-                        <li className="">JavaScript (ES6+)</li>
-                        <li className="">TypeScript</li>
-                        <li className="">React</li>
-                        <li className="">Tailwind CSS</li>
-                        <li className="">Node.js</li>
-                        <li className="">WordPress</li>
-                    </ul>
-                </div>
-                <div className="relative max-w-xs">
-                    <div className="after:border after:border-black after:top-3 after:left-3">
-                        <img src={ImageArray[6].image} />
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+                            <li className="">JavaScript (ES6+)</li>
+                            <li className="">TypeScript</li>
+                            <li className="">React</li>
+                            <li className="">Tailwind CSS</li>
+                            <li className="">Node.js</li>
+                            <li className="">WordPress</li>
+                        </ul>
 
-)
+                    <p className="mb-4"><span className="font-guyot underline underline-offset-4">It's nice to meet you, check out my work below.</span></p>
+                </div>
+            </section>
+            <section>      
+                <ProjectSection />
+            </section>
+    
+    
+        </div>
+    )
+
+}
 
 export default Home;
 
