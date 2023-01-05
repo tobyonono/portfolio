@@ -18,6 +18,12 @@ import img17 from './archive/2f.jpg';
 import img18 from './archive/2g.jpg';
 import img19 from './archive/2h.jpg';
 import img20 from './archive/2i.jpg';
+import img21 from './archive/2j.jpg';
+import img22 from './archive/2k.jpg';
+import img23 from './archive/2l.jpg';
+import img24 from './archive/2m.jpg';
+import img25 from '../images/F1000006.jpg';
+
 
 
 
@@ -31,22 +37,18 @@ import img20 from './archive/2i.jpg';
 
 export const ImageArray = [
     {
+        src: img3,
+         x: 500,
+         y:249
+     },
+    {
         src: img1,
         x:646,
         y:-519
-    },
+    }, 
+    
     {
-        src: img2,
-        x: 307,
-        y:317
-    },
-    {
-       src: img3,
-        x: 500,
-        y:249
-    },
-    {
-        src: img4,
+        src: img25,
         x:553,
         y:-686
     },
@@ -56,9 +58,20 @@ export const ImageArray = [
         y:-230
     },
     {
+        src: img4,
+        x:553,
+        y:-686
+    },
+   
+    {
        src: img11,
         x:646,
         y:-519
+    },
+    {
+        src: img2,
+        x: 307,
+        y:317
     },
     {
         src: img7,
@@ -103,6 +116,18 @@ export const archiveArray = [
     },
     {
         src:img20
+    },
+    {
+        src:img21
+    },
+    {
+        src:img22
+    },
+    {
+        src:img23
+    },
+    {
+        src:img24
     },
 
 
