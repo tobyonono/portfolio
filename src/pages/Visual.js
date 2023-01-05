@@ -17,7 +17,7 @@ const Visual = () => {
             </header>
             <section className="grid grid-cols-2 max-w-screen-lg m-auto">
                 <div className="py-12 pr-12 border-r-2 text-left align-middle">
-            <video controls autoPlay loop><source src={vid1} /></video>
+            <video controls autoPlay><source src={vid1} /></video>
                 </div>
                 <div className="py-12 pl-12 text-left font-GTWalsheim text-sm">
                     <p className="mb-4">I'm definitely more into looking at photographs than taking them, but over the past couple of years I've been taking some of my own and trying to collect some for a family archive.</p>
