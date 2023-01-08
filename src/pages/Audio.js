@@ -28,12 +28,11 @@ const Audio = () => {
                 <div className="max-w-screen-lg m-auto text-sm font-nitti mb-8 ">
                     <div className="grid grid-cols-2 max-w-screen-lg m-auto">
                         <div className=" py-12 pr-12 text-left">
-                            <h2 className="font-GTWalsheim text-2xl"><span className="font-guyot italic">Couple tunes</span> across a number of genres including rap, R&B, amapiano &amp; more.</h2>
-
+                            <h2 className="font-GTWalsheim text-2xl"><span className="font-guyot italic">Couple tunes</span> across a number of genres including rap, R&B, amapiano, jazz &amp; more.</h2>
                         </div>
                         <div className="py-12 pl-12 text-left font-GTWalsheim text-base">
-                            <p className="mb-4">Couple of projects based around my love of music & food, I generally use these to get comfortable using new tools. </p>
-                            <p>I want to always be growing an improving so the code in these all inevitably get changed (at least locally) when I'm trying to learn new things.</p>
+                            <p className="mb-4">Used to have a radio show in college but generally enjoy sharing, stumbling across and digging for new music.</p>
+                            <p>Send me recs, the more R&B adjacent the better.</p>
                         </div>
                     </div>
                     <div className="flex py-2 justify-between border-b border-b-white uppercase">
@@ -41,12 +40,12 @@ const Audio = () => {
                         <p>001</p>
                     </div>
                 </div>
-                
+
 
 
             </section >
             <section>
-            <div className="max-w-screen-lg m-auto">
+                <div className="max-w-screen-lg m-auto">
                     <PlaylistFilter setFilteredGenre={setFilteredGenre} />
                     {showPlaylist && <div className="w-full flex">
                         {playlist}
