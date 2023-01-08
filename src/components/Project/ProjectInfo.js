@@ -1,4 +1,5 @@
-import { ProjectImages } from "../../images/ProjectImages"
+import { ProjectImages } from "../../images/ProjectImages";
+import React from 'react';
 
 export const ProjectInfo = [
     {
@@ -10,25 +11,30 @@ export const ProjectInfo = [
             hosting: 'Vercel',
             server: 'Express'
         },
-        image: ProjectImages[0]
+        image: ProjectImages[0],
+        color:`bg-[midnightblue]`
     }, 
     {
-        name: 'BITTER CASSAVA COOKING CLUB',
+        name: `BITTER CASSAVA 
+         COOKING CLUB`,
         description: 'A web application using the Tasty API. Delivers recipes & instructions based on ingredients you enter. ',
         devTools: {
             library: 'React',
             styling: 'Styled Components',
             hosting: 'Vercel',
         },
-        image: ProjectImages[1] 
+        image: ProjectImages[1],
+        color:`bg-[darkolivegreen]`
     }, 
     {
-        name: 'ARCHY MOOR ARTIST PAGE',
+        name: `ARCHY MOOR 
+        ARTIST PAGE`,
         description: 'Artist page for Archy Moor. Features include Instagram story like slideshow and a pop up lightbox for song lyrics.',
         devTools: {
             library: 'React',
             styling: 'Styled Components',
             hosting: 'Vercel',
         },
-        image: ProjectImages[2] 
+        image: ProjectImages[2],
+        color:`bg-[darkslategrey]`
     }]

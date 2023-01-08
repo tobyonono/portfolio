@@ -10,7 +10,7 @@ const SinglePlaylist = ({ name, image, date, location, genre, setPlaylist, link 
     <article className="w-full p-3 border font-nitti text-sm uppercase shadow-lg rounded-lg">
         <div className="relative p-2 pb-4 border border-black h-full">
             <div className="hover:brightness-50 cursor-pointer" onClick={() => handleClick(link)}>
-                <img src={image} />
+                <img src={image} loading="lazy" />
             </div>
             <div className="flex flex-wrap justify-between mt-3">
                 <span>{date}</span>

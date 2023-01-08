@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Navbar2 from "../components/Navbar2";
 import OverlappingImages from "../components/OverlappingImages";
 import ProjectSection from "../components/Project/ProjectSection";
+import Footer from "../components/Footer";
 
 const items = ["I value kindness & open communication.", "I studied CS @ Trinity College Dublin.","I love downloading new fonts I'm never going to use.", "I support Liverpool FC.", "I have great taste in music.", "Click on 'audio' if you don't believe me.", "Could genuinely eat 20+ crepes in a sitting.", "I like watching food related videos.", "Don't necessarily like cooking."];
 
@@ -45,7 +46,7 @@ const Home = () => {
                 <Navbar2 />
             </header>
             <section className="grid grid-cols-2 max-w-screen-lg m-auto">
-                <div className="py-12 pr-12 border-r-2 text-left align-middle">
+                <div className="py-12 pr-12  text-left align-middle">
                     <h5 className="font-GTWalsheim text-5xl mb-2"><span className="font-guyot italic">Hello!</span> I'm Toby,</h5>
                     <motion.div
                         animate={anim}
@@ -77,7 +78,9 @@ const Home = () => {
             <section>      
                 <ProjectSection />
             </section>
-    
+            <footer>
+                <Footer />
+            </footer>
     
         </div>
     )

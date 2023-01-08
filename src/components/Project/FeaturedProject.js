@@ -5,8 +5,8 @@ import SingleProject from "./SingleProject";
 
 const FeaturedProject = () => {
 
-    const ProjectList = ProjectInfo.map((proj) => {
-        return <SingleProject name={proj.name} description={proj.description} devTools={proj.devTools} image={proj.image} />
+    const ProjectList = ProjectInfo.map((proj, i) => {
+        return <SingleProject key={i} name={proj.name} description={proj.description} devTools={proj.devTools} image={proj.image}color={proj.color} />
     })
 
     return (

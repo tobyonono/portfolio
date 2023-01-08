@@ -4,7 +4,7 @@ const Navbar2 = () => {
 
     return (
       <nav className=" p-0 md:p-4 z-10 w-full md:w-auto max-w-screen-lg m-auto ">
-        <ul className="flex flex-row items-center justify-around m-auto p-2 text-black font-nitti text-sm">
+        <ul className="flex flex-row items-center justify-around m-auto p-2 text-black font-nitti text-sm font-bold">
           <li className='active:border-blue-400'>
             <NavLink to='/' className={({ isActive }) =>
               isActive ? 'opacity-100 border-b' : 'opacity-50 hover:opacity-100 '

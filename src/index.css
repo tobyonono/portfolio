@@ -46,13 +46,14 @@ code {
 
 @font-face{
   font-family: "GTWalsheimPro";
-  font-weight:lighter;
-  src:local("GTWalsheimPro Light"),
+  font-weight: lighter;
+  src:local("GTWalsheimPro"),
   url("./fonts/GTWalsheimPro/GTWalsheimPro-Light.woff")
 }
 @font-face{
   font-family: "GTWalsheimPro";
-  src:local("GTWalsheimPro Medium"),
+  font-weight: normal;
+  src:local("GTWalsheimPro"),
   url("./fonts/GTWalsheimPro/GTWalsheimPro-Medium.woff")
 }
 

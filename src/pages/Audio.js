@@ -2,6 +2,7 @@ import PlaylistFilter from "../components/Playlist/PlaylistFilter";
 import Navbar2 from "../components/Navbar2";
 import SinglePlaylist from "../components/Playlist/SinglePlaylist";
 import MultiplePlaylists from "../components/Playlist/MultiplePlaylists";
+import Footer from "../components/Footer";
 
 import { useState, useEffect } from "react";
 
@@ -10,7 +11,6 @@ const Audio = () => {
     const [playlist, setPlaylist] = useState('');
     const [showPlaylist, setShowPlaylist] = useState(false);
     const [filteredGenre, setFilteredGenre] = useState('All')
-
 
     useEffect(() => {
 
@@ -59,6 +59,9 @@ const Audio = () => {
                     </div>
                 </div>
             </section>
+            <footer>
+                <Footer />
+            </footer>
         </div >
 
 
