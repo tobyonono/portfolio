@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Audio from './pages/Audio';
 import Visual from './pages/Visual';
+import WIP from './pages/WIP';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/audio" element={<Audio />} />
         <Route path="/visual" element={<Visual />} />
+        <Route path="/wip" element={<WIP />} />
 
 
       </Routes>

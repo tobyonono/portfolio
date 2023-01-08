@@ -1,4 +1,6 @@
 import FeaturedProject from "./FeaturedProject";
+import { ProjectInfo } from "./ProjectInfo";
+
 
 const ProjectSection = () => (
     <section className="h-full w-full bg-black py-12">
@@ -19,7 +21,7 @@ const ProjectSection = () => (
 
             </div>
         </div>
-        <FeaturedProject />
+        <FeaturedProject projects={ProjectInfo} gridLayout={`grid-cols-2`}/>
     </section>
 )
 
