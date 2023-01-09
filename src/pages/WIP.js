@@ -1,5 +1,5 @@
 import Navbar2 from "../components/Navbar2";
-import { ProjectInfo } from "../components/Project/ProjectInfo";
+import { WIPProjectInfo } from "../components/Project/ProjectInfo";
 import WIPList from "../components/WIP/WIPList";
 
 const WIP = () => (
@@ -21,7 +21,7 @@ const WIP = () => (
             </div>
         </section >
         <section className='h-full w-full bg-black py-12'>
-            <WIPList projects={ProjectInfo} gridLayout={`grid-cols-1`}/>
+            <WIPList projects={WIPProjectInfo} gridLayout={`grid-cols-1`}/>
         </section>
     </div>
 

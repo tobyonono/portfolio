@@ -17,7 +17,7 @@ const MultiplePlaylists = ({setPlaylist, filteredGenre}) => {
     const playlistList = filteredPlaylist.map((pl) => <SinglePlaylist name={pl.name} image ={pl.image} date={pl.date} location={pl.location} genre={pl.genre} link={pl.link} setPlaylist={setPlaylist}/>)
 
     return(
-        <ul className='grid grid-cols-3 gap-4'>{playlistList}</ul>
+        <ul className='grid grid-cols-3 gap-4 py-6'>{playlistList}</ul>
     )
 
 }

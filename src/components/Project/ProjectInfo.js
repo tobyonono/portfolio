@@ -38,3 +38,40 @@ export const ProjectInfo = [
         image: ProjectImages[2],
         color:`bg-[darkslategrey]`
     }]
+
+    export const WIPProjectInfo = [
+        {
+            name: 'SALT',
+            description: "A simultaneous listening web app using the Spotify API. Matches your playing state to whatever is broadcasting on that channel.",
+            devTools: {
+                library: 'React',
+                styling: 'Tailwind CSS',
+                hosting: 'Vercel',
+                server: 'Python'
+            },
+            image: ProjectImages[0],
+            color:`bg-[darkcyan]`
+        }, 
+        {
+            name: `Football Data Dashboard`,
+            description: 'A web application using the Tasty API. Delivers recipes & instructions based on ingredients you enter. ',
+            devTools: {
+                library: 'React',
+                styling: 'Styled Components',
+                hosting: 'Vercel',
+            },
+            image: ProjectImages[1],
+            color:`bg-[maroon]`
+        }, 
+        {
+            name: `Live Camera
+            Thermal Filter`,
+            description: 'Artist page for Archy Moor. Features include Instagram story like slideshow and a pop up lightbox for song lyrics.',
+            devTools: {
+                library: 'P3.js',
+                styling: 'Styled Components',
+                hosting: 'Vercel',
+            },
+            image: ProjectImages[2],
+            color:`bg-[indianred]`
+        }]
