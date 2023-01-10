@@ -10,11 +10,11 @@ import WIP from './pages/WIP';
 import { inject } from '@vercel/analytics';
 
 
-
+inject();
 
 function App() {
  
-  inject();
+
   return (
     <BrowserRouter>
       <div className='App'>
