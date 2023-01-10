@@ -7,10 +7,14 @@ import Home from './pages/Home';
 import Audio from './pages/Audio';
 import Visual from './pages/Visual';
 import WIP from './pages/WIP';
+import { inject } from '@vercel/analytics';
+
+
 
 
 function App() {
  
+  inject();
   return (
     <BrowserRouter>
       <div className='App'>
