@@ -11,13 +11,13 @@ const WIPList = ({ projects, gridLayout }) => {
                         <p>WIP</p>
                         <p>00{i + 1}</p>
                     </div>
-                    <div className="grid grid-cols-2 max-w-screen-lg m-auto">
+                    <div className="grid grid-cols-2 max-w-screen-lg m-auto whitespace-pre-line">
                         <div className=" py-12 pr-12 text-left">
-                            <h2 className="font-GTWalsheim text-base"><span className="font-guyot italic">A few </span>projects I'm working on and some ideas that haven't been fleshed out yet. Some have been started, and others are still being researched.</h2>
+                            <h2 className="font-GTWalsheim text-base">{proj.desc1}</h2>
                         </div>
                         <div className="py-12 pl-12 text-left font-GTWalsheim text-base">
-                            <p className="mb-4">Working on a couple of things around my interests mainly being music & football.</p>
-                            <p>Also find it a lot easier to learn new things if I'm invested in the outcomes.</p>
+                            <p className="mb-4">{proj.desc2}</p>
+                            <p></p>
                         </div>
                     </div>
                     <div className="py-8">

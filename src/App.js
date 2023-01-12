@@ -7,10 +7,7 @@ import Home from './pages/Home';
 import Audio from './pages/Audio';
 import Visual from './pages/Visual';
 import WIP from './pages/WIP';
-import { inject } from '@vercel/analytics';
 
-
-inject();
 
 function App() {
  
@@ -23,8 +20,6 @@ function App() {
         <Route path="/audio" element={<Audio />} />
         <Route path="/visual" element={<Visual />} />
         <Route path="/wip" element={<WIP />} />
-
-
       </Routes>
     </div>
     </BrowserRouter>
