@@ -11,7 +11,8 @@ module.exports = {
         'nitti': ['Nitti', 'mono'],
         'guyot': ['Guyot', 'sans'],
         'lora':['"Space Grotesk"', 'sans'],
-        'GTWalsheim':['GTWalsheimPro', 'sans']
+        'GTWalsheim':['GTWalsheimPro', 'sans'],
+       
       },
       animation: {
         'spin-slow': 'spin 10s linear infinite',

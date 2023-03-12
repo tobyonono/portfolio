@@ -10,7 +10,7 @@ const SingleProject = ({ key, name, description, devTools, image, color }) => (
                 <h3 className="my-6 text-[bisque] text-2xl relative z-10 whitespace-pre-line">{name}</h3>
             </div>
             <div>
-                <ul className="relative flex flex-wrap z-10 mt-6 mb-3 justify-end text-white text-[0.7rem]">
+                <ul className="relative flex flex-wrap z-10 mt-6 mb-3 md:justify-end text-white text-[0.7rem]">
                     <li className="border border-white p-2 m-1 shadow-lg hover:bg-white hover:text-black rounded-2xl ">{devTools.library}</li>
                     <li className="border border-white p-2 m-1 shadow-lg hover:bg-white hover:text-black rounded-2xl">{devTools.styling}</li>
                     <li className="border border-white p-2 m-1 shadow-lg hover:bg-white hover:text-black rounded-2xl">{devTools.hosting}</li>

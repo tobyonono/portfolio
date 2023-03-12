@@ -45,8 +45,8 @@ const Home = () => {
             <header className="border-b-2">
                 <Navbar2 />
             </header>
-            <section className="grid grid-cols-2 max-w-screen-lg m-auto">
-                <div className="py-12 pr-12 text-left flex items-center">
+            <section className="grid grid-cols-1 md:grid-cols-2 max-w-screen-lg m-auto">
+                <div className=" p-12 md:py-12 md:pr-12 text-left flex items-center">
                     <div className="">
                         <h5 className="font-GTWalsheim text-5xl mb-2"><span className="font-guyot italic">Hello!</span> I'm Toby,</h5>
                         <motion.div

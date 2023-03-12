@@ -10,7 +10,7 @@ const FeaturedProject = ({projects, gridLayout}) => {
 
     return (
         <div className="max-w-screen-lg m-auto">
-        <ul className={`grid ${gridLayout} gap-4`}>
+        <ul className={`grid ${gridLayout} gap-4 md:p-0 p-12`}>
                 {ProjectList}
             </ul>
         </div>
