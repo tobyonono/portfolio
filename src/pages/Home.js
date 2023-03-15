@@ -42,7 +42,7 @@ const Home = () => {
     };
     return (
         <div>
-            <header className="border-b-2">
+            <header className="md:border-b-2">
                 <Navbar2 />
             </header>
             <section className="grid grid-cols-1 md:grid-cols-2 max-w-screen-lg m-auto">
