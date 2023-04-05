@@ -6,6 +6,7 @@ import Navbar2 from "../components/Navbar2";
 import OverlappingImages from "../components/OverlappingImages";
 import ProjectSection from "../components/Project/ProjectSection";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const items = ["I value kindness & open communication.", "I studied CS @ Trinity College Dublin.", "I download new fonts I'm never going to use.", "I support Liverpool Football Club.", "I have great taste in music.", "Click on 'audio' if you don't believe me.", "Could genuinely eat 20+ crepes in a sitting.", "I like watching food related videos.", "Don't necessarily like cooking."];
 
@@ -42,11 +43,9 @@ const Home = () => {
     };
     return (
         <div>
-            <header className="md:border-b-2">
-                <Navbar2 />
-            </header>
+            <Header />
             <section className="grid grid-cols-1 md:grid-cols-2 max-w-screen-lg m-auto">
-                <div className=" p-12 md:py-12 md:pr-12 text-left flex items-center">
+                <div className=" p-12 md:py-12 md:px-0 md:pr-12 text-left flex items-center">
                     <div className="">
                         <h5 className="font-GTWalsheim text-5xl mb-2"><span className="font-guyot italic">Hello!</span> I'm Toby,</h5>
                         <motion.div
@@ -60,7 +59,7 @@ const Home = () => {
                     </div>
 
                 </div>
-                <div className="py-12 pl-12 text-left font-GTWalsheim text-sm">
+                <div className="py-12 md:px-0 pl-12 text-left font-GTWalsheim text-sm">
                     <p className="mb-4">I enjoy creating things that live on the internet. My interest in things computer related started back in 2000 trying to beat all the records on Mavis Beacon.</p>
                     <p className="mb-4">I still don't type particularly fast.</p>
                     <p className="mb-4">Then came hooking up multiple screens, remote access with LogMeIn, editing HTML on mySpace & Tumblr and launching ridiculous websites using Freewebs.</p>

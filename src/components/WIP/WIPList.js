@@ -20,7 +20,7 @@ const WIPList = ({ projects, gridLayout }) => {
                             <p></p>
                         </div>
                     </div>
-                    <div className="p-12 md:py-8">
+                    <div className="p-12 md:px-0 md:py-8">
                         <SingleProject key={i} name={proj.name} description={proj.description} devTools={proj.devTools} image={proj.image} color={proj.color} />
                     </div>
                 </div>

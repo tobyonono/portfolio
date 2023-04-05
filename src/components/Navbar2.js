@@ -59,7 +59,7 @@ const Navbar2 = () => {
       </nav>
 
       <nav className="block md:hidden ">
-        <button onClick={() => setShowMobile(!showMobile)} className="relative md:hidden flex flex-col text-white bottom-unset top-4 left0 text-left p-4 w-auto">
+        <button onClick={() => setShowMobile(!showMobile)} className="relative md:hidden flex flex-col text-white bottom-unset top-1 text-left p-4 w-auto">
           <ul >
             <li>
               <div className="space-y-2">

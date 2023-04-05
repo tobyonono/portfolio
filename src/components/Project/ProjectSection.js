@@ -11,11 +11,11 @@ const ProjectSection = () => (
             </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-lg m-auto text-white">
-            <div className="p-12 md:py-12 md:pr-12 text-left">
+            <div className="px-12 md:px-0 md:py-12 md:pr-12 text-left">
                 <h2 className="font-GTWalsheim text-2xl"><span className="font-guyot italic">Personal design work</span>, experiments, projects &amp; high visuals.</h2>
 
             </div>
-            <div className="p-12 md:py-12 md:pl-12 text-left font-GTWalsheim text-base">
+            <div className="px-12 md:px-0 md:py-12 md:pl-12 text-left font-GTWalsheim text-base">
                 <p className="mb-4">Couple of projects based around my love of music & food, I generally use these to get comfortable using new tools. </p>
                 <p>I want to always be growing an improving so the code in these all inevitably get changed (at least locally) when I'm trying to learn new things.</p>
 

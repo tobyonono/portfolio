@@ -4,13 +4,13 @@ import { Loader } from "../images/ImageArray";
 
 const Footer = () => (
     <div className="flex bg-black text-white items-center flex-col border-t border-t-slate-200">
-        <div className="max-w-screen-lg m-auto w-full p-12 md:py-6">
+        <div className="max-w-screen-lg m-auto w-full p-12 md:px-0 md:py-6">
             <div className="flex max-w-screen-lg m-auto w-full justify-between items-center text-left ">               
                 <h4 className="text-5xl text-left font-GTWalsheim">Thanks for visiting <br /> my portfolio.</h4>
                 <Loader />
             </div>
         </div>
-        <div className="flex max-w-screen-lg m-auto w-full justify-between items-center text-left  p-12 md:pt-3 md:pb-6">
+        <div className="flex max-w-screen-lg m-auto w-full justify-between items-center text-left  p-12 md:pt-3 md:px-0 md:pb-6">
             <p className="font-GTWalsheim"><span className="font-guyot italic">Built with:</span> React, Tailwind CSS, Framer Motion & hosted on Vercel.</p>
             <div className='grid grid-cols-3 max-w-fit gap-4'>
                 <a href='mailto:tconono@gmail.com'><Mail /></a>
