@@ -5,7 +5,7 @@ import SingleProject from "./SingleProject";
 const FeaturedProject = ({projects, gridLayout}) => {
 
     const ProjectList = projects.map((proj, i) => {
-        return <SingleProject key={i} name={proj.name} description={proj.description} devTools={proj.devTools} image={proj.image}color={proj.color} />
+        return <SingleProject key={i} name={proj.name} description={proj.description} devTools={proj.devTools} image={proj.image}color={proj.color} link={proj.link} />
     })
 
     return (

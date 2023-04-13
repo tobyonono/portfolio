@@ -12,7 +12,8 @@ export const ProjectInfo = [
             server: 'Express'
         },
         image: ProjectImages[0],
-        color:`bg-[midnightblue]`
+        color:`bg-[midnightblue]`,
+        link:'#'
     }, 
     {
         name: `BITTER CASSAVA 
@@ -24,7 +25,8 @@ export const ProjectInfo = [
             hosting: 'Vercel',
         },
         image: ProjectImages[1],
-        color:`bg-[darkolivegreen]`
+        color:`bg-[darkolivegreen]`,
+        link:'https://foodathome.vercel.app/'
     }, 
     {
         name: `ARCHY MOOR 
@@ -36,8 +38,23 @@ export const ProjectInfo = [
             hosting: 'Vercel',
         },
         image: ProjectImages[2],
-        color:`bg-[darkslategrey]`
-    }]
+        color:`bg-[darkslategrey]`,
+        link:'https://archymoor.vercel.app/'
+        
+    },
+    {
+        name: 'DSFM',
+        description: "A simultaneous listening web app using the Spotify API. Matches your playing state to whatever is broadcasting on that channel.",
+        devTools: {
+            library: 'React',
+            styling: 'Tailwind CSS',
+            hosting: 'Vercel',
+            server: 'Contentful'
+        },
+        image: ProjectImages[0],
+        color:`bg-[rebeccapurple]`,
+        link:'https://dsfm.vercel.app/'
+    }, ]
 
     export const WIPProjectInfo = [
         {
